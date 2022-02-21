@@ -139,6 +139,8 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+  transform: scale(2);
+  transition:3s;
 }
 .column {
   width: 25%;
