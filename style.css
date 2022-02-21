@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.cal-h {
+  text-align: center;
+}
+.card {
+  margin: 0 auto;
+  max-width: 350px;
+  text-align: center;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-size: 0;
+}
+.card:hover {
+  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.5);
+}
+.calc-head #result {
+  width: 335px;
+  height: 100px;
+  padding: 0 5px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: right;
+}
+.btn {
+  width: 87px;
+  height: 70px;
+  font-weight: bold;
+  font-size: 16px;
+  background-color: #1f2326;
+  color: white;
+}
+.btn-style {
+  background-color: #5f4bb6;
+}
+.btn-ext {
+  background-color: orange;
+}
+.btn:hover {
+  background-color: cadetblue;
+}
+.item1 {
+  grid-area: head;
+}
+.item2 {
+  grid-area: Menu;
+}
+.item3 {
+  grid-area: Main;
+}
+.item4 {
+  grid-area: Aside;
+}
+.item5 {
+  grid-area: Footer;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "head head head head head head"
+    "Menu Main Main Main Aside Aside"
+    " Menu Footer Footer Footer Footer Footer";
+}
+
+.grid-container > div {
+  background-color: chocolate;
+  border: 1px solid black;
+  text-align: center;
+  padding: 5px;
+}
+
+.nav-bar {
+  background-color: darkmagenta;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: flex-end;
+  justify-content: space-around;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.nav-bar a:hover {
+  background-color: gray;
+}
+
+.dropdown-container {
+  padding-top: 5px;
+  position: relative;
+  display: inline;
+}
+.dropdown-content {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  text-align: left;
+  margin-top: 5px;
+  background-color: #5f4bb6;
+  min-width: 100px;
+  display: none;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.dropdown-container:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 700px) {
+  .nav-bar {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .nav-bar a {
+    background-color: indigo;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
+  }
+  .dropdown-container a {
+    display: block;
+  }
+  .dropdown-content a {
+    padding: 10px;
+    margin: 10px;
+    display: block;
+  }
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.column {
+  width: 25%;
+  padding: 10px;
+}
+@media screen and (max-width: 992px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+.header {
+  background-color: steelblue;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}
+.nav-menu {
+  background-color: cadetblue;
+  padding: 20px;
+}
+.nav-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  display: block;
+}
+.main {
+  background-color: tomato;
+  padding: 10px;
+}
+.aside {
+  background-color: cornflowerblue;
+  padding: 20px;
+  color: white;
+  text-align: center;
+  font-size: 0.8rem;
+}
+.footer {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  font-size: 0.8rem;
+}
+/* For Desktop */
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+[class*="col-"] {
+  float: left;
+  padding: 10px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+  .row {
+    text-align: center;
+  }
+  .nav-menu {
+    text-align: center;
+    background-color: aqua;
+    margin: 10px;
+  }
+}
