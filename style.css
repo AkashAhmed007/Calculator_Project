@@ -139,8 +139,12 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  transform: scale(2);
   transition:3s;
+}
+
+.row:hover{
+  transform: scale(2);
+  
 }
 .column {
   width: 25%;
