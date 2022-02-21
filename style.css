@@ -145,6 +145,7 @@
 
 .column:hover{
   transform: scale(1);
+  border: 1px solid green;
   
 }
 .column {
