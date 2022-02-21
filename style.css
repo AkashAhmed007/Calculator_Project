@@ -138,22 +138,10 @@
 }
 .row {
   display: flex;
-  flex-wrap: wrap;
-  
-  background-color: yellow;
-  border: 1px solid green;
-  
+  flex-wrap: wrap;   
 }
-.row>h1{
-  width: 100%;
-  text-align: center;
-}
-.column:hover{
-  transform: scale(2);
-  transition:3s;
-  
-  
-}
+ 
+ 
 .column {
   width: 25%;
   padding: 10px;
