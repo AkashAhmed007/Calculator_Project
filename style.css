@@ -142,7 +142,7 @@
   transition:3s;
 }
 
-.row:hover{
+.column:hover{
   transform: scale(2);
   
 }
