@@ -140,11 +140,12 @@
   display: flex;
   flex-wrap: wrap;
   transition:3s;
-  background-color: yellow;
+  
 }
 
 .column:hover{
-  transform: scale(1);
+  transform: scale(2);
+  background-color: yellow;
   border: 1px solid green;
   
 }
