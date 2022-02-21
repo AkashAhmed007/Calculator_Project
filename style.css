@@ -144,7 +144,10 @@
   border: 1px solid green;
   
 }
-
+.row h1{
+  width: 100%;
+  text-align: center;
+}
 .column:hover{
   transform: scale(2);
   
